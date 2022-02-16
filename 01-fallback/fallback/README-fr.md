@@ -52,7 +52,7 @@ export WEB3_INFURA_PROJECT_ID='AABBCCDD.......'
 export PRIVATE_KEY='0xDEADBEEFCACA...'
 ```
 
-En utilisation la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
+En utilisant la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
 ```bash
 $ brownie run attack main "0x4c7c62Ed79994383EEa5Cf156bd3159e9e12C385" --network rinkeby
 ```
