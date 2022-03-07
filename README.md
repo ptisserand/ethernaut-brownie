@@ -10,4 +10,6 @@ export PRIVATE_KEY='0xDEADBEEFCACA...'
 |---|---|
 | [Fallback Challenge](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008) | [Solution](01-fallback/fallback/README-fr.md)|
 | [Fallout Challenge](https://ethernaut.openzeppelin.com/level/0x5732B2F88cbd19B6f01E3a96e9f0D90B917281E5) | [Solution](02-fallout/fallout/README-fr.md) |
+| [Coinflip Challenge](https://ethernaut.openzeppelin.com/level/0x4dF32584890A0026e56f7535d0f2C6486753624f) | [Solution](03-coinflip/coinflip/README-fr.md) |
+
 
