@@ -13,5 +13,7 @@ export PRIVATE_KEY='0xDEADBEEFCACA...'
 | [Coinflip Challenge](https://ethernaut.openzeppelin.com/level/0x4dF32584890A0026e56f7535d0f2C6486753624f) | [Solution](03-coinflip/coinflip/README-fr.md) |
 | [Telephone Challenge](https://ethernaut.openzeppelin.com/level/0x0b6F6CE4BCfB70525A31454292017F640C10c768) | [Solution](04-telephone/telephone/README-fr.md) |
 | [Token Challenge](https://ethernaut.openzeppelin.com/level/0x63bE8347A617476CA461649897238A31835a32CE) | [Solution](05-token/token/README-fr.md) |
+| [Delegation Challenge](https://ethernaut.openzeppelin.com/level/0x9451961b7Aea1Df57bc20CC68D72f662241b5493) | [Solution](06-delegation/delegation/README-fr.md) |
+
 
 
