@@ -3,7 +3,7 @@
 ## Objectif
 L'objectif de ce niveau et de récupérer un maximum de token en partant de 20 tokens
 
-## Récupération de tokenxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+## Récupération de token
 La seule fonction du contract permettant de récupérer des tokens est [transfer](contracts/token.sol#13)
 
 Le contrat utilise [solidity 0.6.0](contracts/token.sol#2) qui est sujet au overflow.
