@@ -19,6 +19,7 @@ export PRIVATE_KEY='0xDEADBEEFCACA...'
 | [King Challenge](https://ethernaut.openzeppelin.com/level/0x43BA674B4fbb8B157b7441C2187bCdD2cdF84FD5) | [Solution](09-king/king/README-fr.md) |
 | [Reentrancy Challenge](https://ethernaut.openzeppelin.com/level/0xe6BA07257a9321e755184FB2F995e0600E78c16D) | [Solution](10-reentrancy/reentrancy/README-fr.md) |
 | [Elevator Challenge](https://ethernaut.openzeppelin.com/level/0x11343d543778213221516D004ED82C45C3c8788B) | [Elevator](11-elevator/elevator/README-fr.md) |
+| [Privacy Challenge](https://ethernaut.openzeppelin.com/level/0x11343d543778213221516D004ED82C45C3c8788B) | [Solution](12-privacy/privacy/README-fr.md) |
 
 
 
