@@ -15,73 +15,74 @@ Une fois le calcul effectué, l'appel à[`flip`](contracts/coinflipAttack.sol#22
 
 
 ## Exécution du script d'attaque
-Afin de pouvoir agir sur la chaine `rinkeby`, il est nécessaire de créer un fichier `.env` contenant la clé de projet [Infura](https://infura.io/) et la valeur de la clé privée du compte utilisé pour le challenge:
+Afin de pouvoir agir sur la chaine `goerli`, il est nécessaire de créer un fichier `.env` contenant la clé de projet [Infura](https://infura.io/) et la valeur de la clé privée du compte utilisé pour le challenge:
 ```shell
 export WEB3_INFURA_PROJECT_ID='AABBCCDD.......'
 export PRIVATE_KEY='0xDEADBEEFCACA...'
 ```
 
-En utilisant la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0x4dF32584890A0026e56f7535d0f2C6486753624f) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
+En utilisant la console sur le site d'[ethernaut openzeppelin](https://ethernaut.openzeppelin.com/level/0xae9677ff69efB3C1B9559C8F2A9ED6a2212148e3) on récupère l'adresse du contrat déployé pour lancer l'attaque ainsi:
 ```bash
-$ brownie run ./scripts/attack.py main "0x1fc17cF30D907eAbf342a041632A4b345e952566" --network rinkeby
+$ brownie run ./scripts/attack.py main "0x8D19ac38476b28CBA1D155ded3f04d155906F62C" --network goerli
 ```
 ```console
-Brownie v1.18.1 - Python development framework for Ethereum
+Brownie v1.19.0 - Python development framework for Ethereum
 
 CoinflipProject is the active project.
 
 Running 'scripts/attack.py::main'...
-Target contract: 0x1fc17cF30D907eAbf342a041632A4b345e952566
-Transaction sent: 0x6055fafd1c9221ba10c249a0c5143cd103fd69904e8e215e374971bdb3de0f3b
-  Gas price: 1.000000009 gwei   Gas limit: 281425   Nonce: 203
-  CoinFlipAttack.constructor confirmed   Block: 10289520   Gas used: 255841 (90.91%)
-  CoinFlipAttack deployed at: 0xf5539F7dC61469cbFba58ff6C2591695cf05cD7d
+Target contract: 0x8D19ac38476b28CBA1D155ded3f04d155906F62C
+Transaction sent: 0x297b8ac2d8bfd2e4e5cef96fcbd2a39de520c4b58a8a8d8955fd54705f195b5e
+  Gas price: 61.515771471 gwei   Gas limit: 281425   Nonce: 23
+  CoinFlipAttack.constructor confirmed   Block: 7838826   Gas used: 255841 (90.91%)
+  CoinFlipAttack deployed at: 0xdFad5f7FCdCb2C787590B7FCD30763EC6562863D
 
-Attack address: 0xf5539F7dC61469cbFba58ff6C2591695cf05cD7d
-Transaction sent: 0x19f32772b81858b642e453f7255b6435ab6ad6ef5407259273d5be07c908755d
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 204
-  CoinFlipAttack.hack confirmed   Block: 10289521   Gas used: 76105 (84.56%)
+Attack address: 0xdFad5f7FCdCb2C787590B7FCD30763EC6562863D
+Transaction sent: 0x45dbab8624d226db9b3f885841d326ae124f19356efe1e9c6a06152307a4438a
+  Gas price: 60.020237243 gwei   Gas limit: 90000   Nonce: 24
+  CoinFlipAttack.hack confirmed   Block: 7838828   Gas used: 75975 (84.42%)
 
-Transaction sent: 0x3d703bee4ca13e13beaaebbc468f9f39288269290ea93151c738421daa6c56ff
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 205
-  CoinFlipAttack.hack confirmed   Block: 10289522   Gas used: 41905 (46.56%)
+Transaction sent: 0x49d393a4675843c4c339b79141e1a9fafefbc1f2e9bc96f653e4f8b8f81b473e
+  Gas price: 52.332410145 gwei   Gas limit: 90000   Nonce: 25
+  CoinFlipAttack.hack confirmed   Block: 7838829   Gas used: 41775 (46.42%)
 
-Transaction sent: 0xad802eb2584b683d7bc738c570ae2822735c6c8505b3c63ee5cd3f7e0201acb8
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 206
-  CoinFlipAttack.hack confirmed   Block: 10289523   Gas used: 41905 (46.56%)
+Transaction sent: 0x09c52a15e907c74f7a139b1da85df62afe6dc0542078bccd0cba2003e3473c2e
+  Gas price: 52.177373665 gwei   Gas limit: 90000   Nonce: 26
+  CoinFlipAttack.hack confirmed   Block: 7838849   Gas used: 41775 (46.42%)
 
-Transaction sent: 0xa7e262edc996e338845c758522a1d3bf298b7957bf49620cce1e0d7ff7ed4db1
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 207
-  CoinFlipAttack.hack confirmed   Block: 10289524   Gas used: 41905 (46.56%)
+Transaction sent: 0x62af571b13b64045d8144d39f772f19e2d9528f3444902ab571da924fe485adf
+  Gas price: 52.085534483 gwei   Gas limit: 90000   Nonce: 27
+  CoinFlipAttack.hack confirmed   Block: 7838853   Gas used: 41755 (46.39%)
 
-Transaction sent: 0x87557ef0e6bf0615c89b00c5cd75139815c1a45d76198e12810819832fa16e3f
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 208
-  CoinFlipAttack.hack confirmed   Block: 10289525   Gas used: 41925 (46.58%)
+Transaction sent: 0xcaaa987453e5ce4b19bd610b878d9beeb592c48e69938a99688fa94ed72db82d
+  Gas price: 49.137453031 gwei   Gas limit: 90000   Nonce: 28
+  CoinFlipAttack.hack confirmed   Block: 7838902   Gas used: 41775 (46.42%)
 
-Transaction sent: 0x40a4182a177d87c723ac27d379cccf5e1aa2c7666a090d5952383c536ca4e56b
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 209
-  CoinFlipAttack.hack confirmed   Block: 10289526   Gas used: 41905 (46.56%)
+Transaction sent: 0x16030db248735a00d8539b3cf83ff6cdbcf2510fa109a3a8cc15cfde1f3b3eb2
+  Gas price: 48.195478172 gwei   Gas limit: 90000   Nonce: 29
+  CoinFlipAttack.hack confirmed   Block: 7838918   Gas used: 41775 (46.42%)
 
-Transaction sent: 0x683238dc1dc594b554fbc49d91a2aae8a80ad327771228f3b904660a601fb153
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 210
-  CoinFlipAttack.hack confirmed   Block: 10289527   Gas used: 41905 (46.56%)
+Transaction sent: 0x7d1d57d124715e37642c597dd083437ddb8b66e278287431527bcd6e09978c5e
+  Gas price: 46.027368937 gwei   Gas limit: 90000   Nonce: 30
+  CoinFlipAttack.hack confirmed   Block: 7838921   Gas used: 41755 (46.39%)
 
-Transaction sent: 0xf52f55453171cc0d5d27a54b6e08a2d96fc1070c0d4e17a48d22fe0b1908d90b
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 211
-  CoinFlipAttack.hack confirmed   Block: 10289528   Gas used: 41925 (46.58%)
+Transaction sent: 0x7cc3679df9f22bab113aa9350fbb515d2606e9a2c76e52f930f66ce4d1063439
+  Gas price: 44.92033064 gwei   Gas limit: 90000   Nonce: 31
+  CoinFlipAttack.hack confirmed   Block: 7838927   Gas used: 41755 (46.39%)
 
-Transaction sent: 0x139d1fc05c0dbf17be01cd0ea6996bd723b012e6a04ef0680a04880591b94020
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 212
-  CoinFlipAttack.hack confirmed   Block: 10289529   Gas used: 41905 (46.56%)
+Transaction sent: 0xe404363ebbc3c15b749bfb6e1c465a00add12fa22a51ac681338ac39443b96bf
+  Gas price: 44.710439045 gwei   Gas limit: 90000   Nonce: 32
+  CoinFlipAttack.hack confirmed   Block: 7838929   Gas used: 41775 (46.42%)
 
-Transaction sent: 0xfa8df48b04ab79d7a4b66a8ce754c91b74178fa769fbbdbd40e3db19278c0362
-  Gas price: 1.00000001 gwei   Gas limit: 90000   Nonce: 213
-  CoinFlipAttack.hack confirmed   Block: 10289530   Gas used: 41925 (46.58%)
+Transaction sent: 0x9524e20cb0e4e4358e9164f22d612b011532028143f2d6d80432e353088af784
+  Gas price: 44.829616695 gwei   Gas limit: 90000   Nonce: 33
+  CoinFlipAttack.hack confirmed   Block: 7838931   Gas used: 41755 (46.39%)
 
 Nb ok: 10
-Transaction sent: 0x74e680e4d438abef20ed6780d1ea36577e4c35f3a4a6dbc119563a623b2253eb
-  Gas price: 1.00000001 gwei   Gas limit: 28821   Nonce: 214
-  CoinFlipAttack.destroy confirmed   Block: 10289531   Gas used: 26201 (90.91%)
+Transaction sent: 0xb39eed9067c3b7eba73a4030f8eda17df99f005e13075110d9ac2f1c6b6e35f0
+  Gas price: 45.014987221 gwei   Gas limit: 28821   Nonce: 34
+  CoinFlipAttack.destroy confirmed   Block: 7838933   Gas used: 26201 (90.91%)
+
 ```
 
 
