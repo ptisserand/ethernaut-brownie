@@ -46,7 +46,7 @@ Ensuite en envoyant des fonds à l'adresse du contrat, la méthode `receive` va 
 Une fois que nous sommes owner, nous pouvons appeller la méthode `withdraw` qui nous permet de récupérer la totalité des fonds du contrat
 
 ## Exécution du script d'attaque
-Afin de pouvoir agir sur la chaine `rinkeby`, il est nécessaire de créer un fichier `.env` contenant la clé de projet [Infura](https://infura.io/) et la valeur de la clé privée du compte utilisé pour le challenge:
+Afin de pouvoir agir sur la chaine `goerli`, il est nécessaire de créer un fichier `.env` contenant la clé de projet [Infura](https://infura.io/) et la valeur de la clé privée du compte utilisé pour le challenge:
 ```shell
 export WEB3_INFURA_PROJECT_ID='AABBCCDD.......'
 export PRIVATE_KEY='0xDEADBEEFCACA...'
